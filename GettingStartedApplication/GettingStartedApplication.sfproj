@@ -41,6 +41,7 @@
     <ProjectReference Include="..\StatefulBackendService\StatefulBackendService.csproj" />
     <ProjectReference Include="..\StatelessBackendService\StatelessBackendService.csproj" />
     <ProjectReference Include="..\WebService\WebService.csproj" />
+    <ProjectReference Include="..\WireMockService\WireMockService.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationPackageRoot\GuestExeBackendServicePkg\Code\SimpleWebServer.exe" />
