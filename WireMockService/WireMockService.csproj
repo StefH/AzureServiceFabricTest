@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ServiceFabric.Services" Version="3.2.187" />
-    <PackageReference Include="WireMock.Net.StandAlone" Version="1.0.4.17" />
+    <PackageReference Include="WireMock.Net.StandAlone" Version="1.0.4.18" />
   </ItemGroup>
 
 </Project>

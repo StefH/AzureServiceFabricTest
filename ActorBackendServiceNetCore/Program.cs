@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Fabric;
 using System.Threading;
-using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Actors.Runtime;
 
 namespace ActorBackendServiceNetCore
@@ -20,9 +17,14 @@ namespace ActorBackendServiceNetCore
                 // The contents of your ServiceManifest.xml and ApplicationManifest.xml files
                 // are automatically populated when you build this project.
                 // For more information, see https://aka.ms/servicefabricactorsplatform
-
-                ActorRuntime.RegisterActorAsync<NetCoreActor>(
-                   (context, actorType) => new ActorService(context, actorType)).GetAwaiter().GetResult();
+                ActorRuntime.RegisterActorAsync<NetCoreActor>((context, actorType) => 
+                    new ActorService(context, actorType, settings: new ActorServiceSettings
+                    {
+                        //ActorConcurrencySettings = new ActorConcurrencySettings
+                        //{
+                        //    ReentrancyMode = ActorReentrancyMode.Disallowed
+                        //}
+                    })).GetAwaiter().GetResult();
 
                 Thread.Sleep(Timeout.Infinite);
             }
