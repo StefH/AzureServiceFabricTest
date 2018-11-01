@@ -15,7 +15,7 @@
     <EntryPoint>
       <!-- Follow this link for more information about deploying Windows containers to Service Fabric: https://aka.ms/sfguestcontainers -->
       <ContainerHost>
-        <ImageName>sheyenrath/wiremock.net-nano:1.0.4.18</ImageName>
+        <ImageName>sheyenrath/wiremock.net-nano:1.0.4.19</ImageName>
 
         <!-- comma delimited list of commands for container -->
         <!-- Pass commands https://stackoverflow.com/questions/52668237/how-to-specify-commandline-arguments-to-a-docker-container-in-azure-service-frab/52669138#52669138 -->
